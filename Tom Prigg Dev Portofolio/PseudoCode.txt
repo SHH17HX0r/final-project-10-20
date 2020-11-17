@@ -1,0 +1,31 @@
+Home Page
+
+3 Buttons for menu items at top of page. */
+    1) Projects Menu 
+    2) Bio button 
+    3) Contact menu
+
+Profile picture
+    1) Simple photo with some introduction and Greeting text
+
+Carousel - Rotates an image of each project, bio and Contact me pages.
+    1) Has forward, backward, and pause button.
+    2) Has text to highlight what the current image links too
+    3) Each image hyperlinks to corresponding page.
+
+Footer 
+    1) Contains some contact me information.
+    2) Social media information
+
+Machine Learning Page 
+    1) Graph of Voter behavior data.
+    2) Graph of predicted behavior.
+
+Bio Page 
+    1) Breakdown of history.
+    2) Images of some photos.
+    3) Video of stunt work.
+    4) Iceberg video.
+
+Writing Background Page. 
+    1) Page of articles and writing bio. 

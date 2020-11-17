@@ -1,0 +1,46 @@
+/******************** TAG *********************/
+
+body {
+    background-image: url("./images/cybersecurity.jpg");
+    background-color: #cccccc; /* Used if the image is unavailable */
+  height: 500px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+    margin: 8;
+}
+
+h1 {
+    margin-top: 8;
+}
+a {
+    padding: 20px;
+    margin: 0 auto;
+}
+hr {
+    border-style: dotted none none;
+    border-width: 7px;
+    border-color: grey;
+    height: 0px;
+    width: 5%;
+}
+
+
+/******************* Classes ******************/
+
+.top-container {
+    background-color: goldenrod;
+    border: solid 10px;
+    border-color: black;
+    height: 200px;
+    padding: 20px;
+    width: 200px;
+}
+
+.middle-container {}
+
+.bottom-container {}
+
+.pro {
+    text-decoration: underline;
+}
