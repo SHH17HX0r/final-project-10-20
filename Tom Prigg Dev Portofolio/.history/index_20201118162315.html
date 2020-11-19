@@ -1,0 +1,95 @@
+<!-- This is just a code section for me to refer back to some Flexbox snippets.  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="icon" href="./images/SpiderHackerIcon.jpg" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tom Prigg</title>
+
+    <style></style>
+  </head>
+  <body>
+    <!-- Add the speech feature here -->
+    <button class="talk">Talk</button>
+    <h3 class="content"></h3>
+
+    <div class="container-1">
+      <div class="box-1">
+        <div class="profile">
+          <img src="images\Profile pic.png" alt="Profile-Pic" />
+          <h2>Hello, I'm Tom Prigg</h2>
+          <p>A Cybersecurity Specialist and Software Developer</p>
+        </div>
+        <hr />
+      </div>
+
+      <div class="box-2">
+        <div class="carousel">
+          <button class="carousel__button carousel__button--left">
+            <img src="./images/left.jpg" alt="" />
+          </button>
+          <div class="carousel__track-container">
+            <ul class="carousel__track">
+              <li class="carousel__slide current-slide">
+                <img
+                  class="carousel__image"
+                  src="./images/CyberEarth.jpg"
+                  alt="cyber"
+                />
+              </li>
+              <li class="carousel__slide">
+                <img
+                  class="carousel__image"
+                  src="./images/cybersecurity.jpg"
+                  alt="cyber"
+                />
+              </li>
+              <li class="carousel__slide">
+                <img
+                  class="carousel__image"
+                  src="./images/hacker.jpg"
+                  alt="cyber"
+                />
+              </li>
+            </ul>
+          </div>
+          <button class="carousel__button carousel__button--right">
+            <img src="./images/right.jpg" alt="" />
+          </button>
+
+          <div class="carousel__nav">
+            <button class="carousel__indicator current-slide"></button>
+            <button class="carousel__indicator"></button>
+            <button class="carousel__indicator"></button>
+          </div>
+        </div>
+
+        <script src="./js/carousel.js"></script>
+        <hr />
+      </div>
+
+      <div class="box-3">
+        <a
+          class="footer-link"
+          href="https://www.linkedin.com/in/thomas-prigg-7349265/"
+        >
+          LinkedIn
+        </a>
+        <a class="footer-link" href="https://hackerone.com/ssh17hx0r">
+          Bug Bounty Hunter Profile
+        </a>
+        <a class="footer-link" href="https://twitter.com/SSH17HX0r">Twitter</a>
+        <a class="btn" href="mailto: Tom.Prigg@gmail.com">CONTACT ME</a>
+      </div>
+    </div>
+    <script src="./script/carousel.js"></script>
+    <script src="./script/app.js"></script>
+  </body>
+</html>

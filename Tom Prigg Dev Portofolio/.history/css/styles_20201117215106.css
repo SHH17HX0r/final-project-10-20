@@ -1,16 +1,5 @@
       body {
           font-family: 'Roboto', sans-serif;
-          background-color: 666;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          /* max-height: 100vh; */
-          /* margin: 0; */
-      }
-      a {
-          padding: 50px;
-          cursor: pointer;
       }
       hr {
           
@@ -31,22 +20,18 @@
       }
       
       .container-1 div {
-        align-items: center;
+        border: 1px #ccc solid;
         padding: 10px;
+        align-items: center;
       }
       .box-1 {
-          /* Adding border to troubleshoot */
-        border: 1px #ccc solid;
         flex: 3;
         order: 1;
         align-items: center;
-        justify-content: center;
       }
       .box-2 {
         flex: 1;
         order: 2;
-        width: 100%;
-        align-items: center;
       }
       .box-3 {
         flex: 1;
@@ -76,6 +61,7 @@
 
 .carousel__track {
     padding: 0px;
+    margin: 0;
     margin: 0;
     list-style: none;
     position: relative;

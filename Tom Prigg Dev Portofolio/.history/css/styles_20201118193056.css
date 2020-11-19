@@ -6,7 +6,7 @@
           align-items: center;
           justify-content: center;
           /* max-height: 100vh; */
-          /* margin: 0; */
+          margin: 0;
       }
       a {
           padding: 50px;
@@ -32,11 +32,10 @@
       
       .container-1 div {
         align-items: center;
+        border: 1px #ccc solid;
         padding: 10px;
       }
       .box-1 {
-          /* Adding border to troubleshoot */
-        border: 1px #ccc solid;
         flex: 3;
         order: 1;
         align-items: center;
@@ -76,6 +75,7 @@
 
 .carousel__track {
     padding: 0px;
+    margin: 0;
     margin: 0;
     list-style: none;
     position: relative;
