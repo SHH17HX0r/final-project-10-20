@@ -17,29 +17,27 @@ const moveToSlide = (track, currentSlide, targetSlide) => {
   track.style.transform = 'translateX(-' + targetSlide.style.left + ')';
   currentSlide.classList.remove('current-slide');
   targetSlide.classList.add('current-slide');
+
+  if (currentSlide.index[1]) {
+    readOutLoud(MachineLearning);
+  }
 };
 
 const updateDots = (currentDot, targetDot) => {
-  currentDot.classList.remove('current-slide');
-  targetDot.classList.add('current-slide');
+  currentDot.classlist.remove('current-slide');
+  targetDot.classlist.add('current-slide');
 };
 
 const hideShowArrows = (slides, prevButton, nextButton, targetIndex) => {
   if (targetIndex === 0) {
     prevButton.classList.add('is-hidden');
     nextButton.classList.remove('is-hidden');
-    readOutLoud(bio);
-    content.textContent = bio;
   } else if (targetIndex === slides.length - 1) {
     prevButton.classList.remove('is-hidden');
     nextButton.classList.add('is-hidden');
-    readOutLoud(pen);
-    content.textContent = pen;
   } else {
     prevButton.classList.remove('is-hidden');
     nextButton.classList.remove('is-hidden');
-    readOutLoud(machineLearning);
-    content.textContent = machineLearning;
   }
 };
 
@@ -48,7 +46,7 @@ prevButton.addEventListener('click', (e) => {
   const currentSlide = track.querySelector('.current-slide');
   const prevSlide = currentSlide.previousElementSibling;
   const currentDot = dotsNav.querySelector('.current-slide');
-  const prevDot = currentDot.previousElementSibling;
+  const prevDot = currentDot.prevElementSibling;
   const prevIndex = slides.findIndex((slide) => slide === prevSlide);
 
   moveToSlide(track, currentSlide, prevSlide);
@@ -78,32 +76,11 @@ dotsNav.addEventListener('click', (e) => {
   if (!targetDot) return;
 
   const currentSlide = track.querySelector('.current-slide');
-  const currentDot = dotsNav.querySelector('.current-slide');
+  const currentDot = track.querySelector('.current-slide');
   const targetIndex = dots.findIndex((dot) => dot === targetDot);
   const targetSlide = slides[targetIndex];
 
   moveToSlide(track, currentSlide, targetSlide);
   updateDots(currentDot, targetDot);
-  // hideShowArrows(slides, prevButton, nextButton, nextIndex);
-
-  if (targetIndex === 0) {
-    prevButton.classList.add('is-hidden');
-    nextButton.classList.remove('is-hidden');
-    readOutLoud(bio);
-    content.textContent = bio;
-  } else if (targetIndex === slides.length - 1) {
-    prevButton.classList.remove('is-hidden');
-    nextButton.classList.add('is-hidden');
-    readOutLoud(pen);
-    content.textContent = pen;
-  } else {
-    prevButton.classList.remove('is-hidden');
-    nextButton.classList.remove('is-hidden');
-    readOutLoud(machineLearning);
-    content.textContent = machineLearning;
-  }
-
-  // if (targetDot === 1) {
-  //   readOutLoud(MachineLearning);
-  // }
+  hideShowArrows(slides, prevButton, nextButton, nextIndex);
 });

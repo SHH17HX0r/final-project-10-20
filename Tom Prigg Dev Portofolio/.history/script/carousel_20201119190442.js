@@ -28,18 +28,12 @@ const hideShowArrows = (slides, prevButton, nextButton, targetIndex) => {
   if (targetIndex === 0) {
     prevButton.classList.add('is-hidden');
     nextButton.classList.remove('is-hidden');
-    readOutLoud(bio);
-    content.textContent = bio;
   } else if (targetIndex === slides.length - 1) {
     prevButton.classList.remove('is-hidden');
     nextButton.classList.add('is-hidden');
-    readOutLoud(pen);
-    content.textContent = pen;
   } else {
     prevButton.classList.remove('is-hidden');
     nextButton.classList.remove('is-hidden');
-    readOutLoud(machineLearning);
-    content.textContent = machineLearning;
   }
 };
 
@@ -84,24 +78,17 @@ dotsNav.addEventListener('click', (e) => {
 
   moveToSlide(track, currentSlide, targetSlide);
   updateDots(currentDot, targetDot);
-  // hideShowArrows(slides, prevButton, nextButton, nextIndex);
+  hideShowArrows(slides, prevButton, nextButton, nextIndex);
 
   if (targetIndex === 0) {
-    prevButton.classList.add('is-hidden');
-    nextButton.classList.remove('is-hidden');
-    readOutLoud(bio);
-    content.textContent = bio;
+    previousButton.classList.add('is-hidden');
+    nextButton.classlist.remove('is-hidden');
   } else if (targetIndex === slides.length - 1) {
-    prevButton.classList.remove('is-hidden');
-    nextButton.classList.add('is-hidden');
-    readOutLoud(pen);
-    content.textContent = pen;
-  } else {
-    prevButton.classList.remove('is-hidden');
-    nextButton.classList.remove('is-hidden');
-    readOutLoud(machineLearning);
-    content.textContent = machineLearning;
+    previousButton.classList.remove('is-hidden');
+    nextButton.classlist.add('is-hidden');
   }
+
+  console.log(targetDot.button);
 
   // if (targetDot === 1) {
   //   readOutLoud(MachineLearning);

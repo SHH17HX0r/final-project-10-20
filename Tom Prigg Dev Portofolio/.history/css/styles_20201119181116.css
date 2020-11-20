@@ -35,8 +35,7 @@
 
       .content {
           display: flex;
-          margin: 0 auto;
-          padding: 10px;
+          width: 50%;
       }
 
       .profile {
@@ -107,8 +106,7 @@
 }
 
 .carousel__button{
-    /* background: transparent; */
-    background-color: rgb(168, 168, 168);
+    background: transparent;
     border: 0px;
     cursor: pointer;
     position: absolute;

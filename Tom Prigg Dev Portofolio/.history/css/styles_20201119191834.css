@@ -35,8 +35,8 @@
 
       .content {
           display: flex;
+          /* width: 50%; */
           margin: 0 auto;
-          padding: 10px;
       }
 
       .profile {
